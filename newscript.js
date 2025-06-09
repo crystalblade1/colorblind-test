@@ -55,7 +55,7 @@ function showNextTest() {
   document.getElementById('test-title').textContent = `Test ${currentTest + 1}/9`;
 
   const mediaHTML = test.mediaType === 'video'
-    ? `<video src="${test.mediaUrl}" autoplay loop muted style="width: 300px;"></video>`
+    ? `<video src="${test.mediaUrl}" autoplay loop muted preload="auto" controls style="width: 300px;"></video>`
     : `<img src="${test.mediaUrl}" style="width: 300px;">`;
 
   document.getElementById('test-media').innerHTML = mediaHTML;
