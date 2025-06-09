@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(53, 51, 51);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.test-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(113, 115, 116);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  min-height: 500px;
+  min-width: 200px;
+}
+
+.hidden{
+  display: none;
+}
+
+.video-crop{
+  height: 50vh;
+  max-width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+
+.video-crop video {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+}
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.options{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+}
+
+#next-btn{
+  align-self: center;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  background-color: orange;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(63, 60, 60);
+  border-radius: 5px;
+  margin-block: auto;
+}
+#next-btn:hover{
+  background-color: rgb(184, 135, 45);
+}
+
+
+.icon{
+  width: 60px;
+  height: auto;
+  transition: transform 0.1s ease, color 0.1s ease;
+  color: rgb(49, 46, 46);
+
+
+}
+.icon:hover {
+  transform: scale(1.1);
+  color: rgb(128, 207, 128);
+  cursor: pointer;
+}
+#result {
+
+font-size: 1.2rem;
+color: black;
+}
+
+@media (max-width: 500px) {
+  .test-container {
+    width: 95vw;  /* almost full width on small screens */
+    min-width: auto;  /* remove min-width constraint */
+    padding: 15px;    /* reduce padding for small screens */
+    height: 100%;     /* adjust height to content */
+  }
+  .video-crop{
+    margin-inline: auto;
+    margin-top: 3rem;
+    
+  }
+}
