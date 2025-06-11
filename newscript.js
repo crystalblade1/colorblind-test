@@ -34,6 +34,7 @@ function showNextTest() {
 
    document.getElementById("next-btn").classList.add('hidden');
    document.querySelector('.video-crop').classList.remove('hidden');
+   document.querySelector('.test-container').classList.add('test-container-2');
 
    document.querySelectorAll('.options svg').forEach(e =>{
     e.classList.remove('hidden');

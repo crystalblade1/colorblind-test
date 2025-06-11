@@ -10,16 +10,32 @@ body {
   overflow: hidden;
 }
 
+.main-container{
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  min-width: 1000px;
+  border-radius: 30px;
+box-shadow: 1px 2px 29px -4px rgba(0,0,0,0.73);
+background-color: rgb(83, 79, 79);
+  
+}
+
 .test-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: rgb(113, 115, 116);
+background-color: rgb(83, 79, 79);
   border-radius: 10px;
   padding: 30px;
   text-align: center;
   min-height: 500px;
   min-width: 200px;
+  width: 50%;
+
+}
+.test-container-2 {
+  min-width: 20vw;
 }
 
 .hidden{
@@ -32,6 +48,7 @@ body {
   height: 250px;
   overflow: hidden;
   border-radius: 20px;
+    margin-inline: auto;
 
 }
 
@@ -40,6 +57,7 @@ body {
   height: 500px;
   margin-bottom: 20px;
   border-radius: 20px;
+
 
 }
 #result {
@@ -75,7 +93,7 @@ body {
   width: 60px;
   height: auto;
   transition: transform 0.1s ease, color 0.1s ease;
-  color: rgb(49, 46, 46);
+  color: rgb(48, 46, 46);
 
 
 }
