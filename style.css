@@ -126,7 +126,7 @@ background-color: rgb(83, 79, 79);
 }
 .icon:hover {
   transform: scale(1.1);
-  color: rgb(128, 207, 128);
+  color: rgb(204, 199, 199);
   cursor: pointer;
 }
 #result {
