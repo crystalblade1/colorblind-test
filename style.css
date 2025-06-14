@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 500px;
-  min-width: 1000px;
+  min-width: 800px;
   border-radius: 30px;
 box-shadow: 1px 2px 29px -4px rgba(0,0,0,0.73);
 background-color: rgb(83, 79, 79);
@@ -68,7 +68,34 @@ background-color: rgb(83, 79, 79);
 .options{
   display: flex;
   justify-content: space-around;
-  margin-top: 7rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.other-options{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.other-options button{
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgb(170, 165, 165);
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: ease-in-out 0.2s;
+}
+.other-options button:hover{
+
+  color: rgb(83, 79, 79);
+  background-color: rgb(204, 199, 199);
+  border: 1px solid rgb(204, 199, 199);
+}
+.other-options button:active{
+  transition: none;
+  transform: scale(1.02);
 }
 
 #next-btn{
